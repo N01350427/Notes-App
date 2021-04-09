@@ -15,6 +15,7 @@ app.use('/api/note', noteRoutes);
 app.use('/api/noteuser', userRoutes);
 app.use('/api/userauth', authRoutes);
 
-app.listen(5001, () => {
-    console.log('Server started');
+const PORT = process.env.PORT || 5001;
+app.listen(PORT,() => {
+console.log('Server Started'); 
 });
